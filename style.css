@@ -54,11 +54,7 @@ align-items: center;
 position: absolute;
 top: 170px;
 left: 370px;}
- /* #container1{ display: flex;
-    flex-direction: row;
-justify-content: center;
-align-items: center;
-} */
+
 #container1 input{
     margin-top: 10px;
     margin-left: 25px;
@@ -100,147 +96,54 @@ margin-top:10px;}
     transform: translateY(0);
 }
 
+#container2{
+  background: red;
+  width:100vw;
+  position: relative;
+  top:260px;
+  padding-top: 20px;
+}
+  #container2{ display:flex;
+    flex-direction: column;
+    align-items: center;}
+
+    #display{width: 560px;
+      min-height: 70px;
+      border: 2px solid rgba(255, 255, 255, 0.523);
+      border-radius: 15px;
+      margin-bottom:20px;
+      margin-left:10px;
+    }
+    #display{ background: rgba(255, 255, 255, 0.107);
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+      backdrop-filter: blur(10px);}
+      #display{display: flex;
+          height: auto;
+          align-items: stretch;
+          flex-direction: column;
+      }
+ 
+      #socials{
+        width:100vw;
+        height: 100px;
+        position: absolute;
+        bottom:20px;
+        right:0px;
+        left:0px;
+        /* background:black; */
+        color: white;
+      }
+
+
+
+
+
+
+
+
+
+
+
 
 /* css for the main display section  */
 
-#display{ width: 550px;
-height: 600px;
-border: 2px solid rgba(255, 255, 255, 0.523);
-border-radius: 15px;
-position: absolute;
-top: 290px;
-left: 370px;
-}   
-    #display{ background: rgba(255, 255, 255, 0.107);
-        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    backdrop-filter: blur(10px);}
-
-      /* includes the div, buttons and span that are dynamically added */
-          .d-maindiv{ width:530px;
-            height: 70px;
-            margin-left:10px;
-            padding-top:15px;
-        margin-top: 20px;
-        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;}
-             .d-maindiv{
-                display: grid;
-                grid-template-columns: repeat(4, 1fr);
-                grid-template-rows: repeat(2, 1fr);
-                grid-column-gap: 8px;
-                grid-row-gap: 0px;
-                }
-
-                .d-span  { grid-area: 1 / 1 / 3 / 3; }
-                .d-span{ margin-left: 20px;
-                    margin-bottom:10px;
-                    width: 270px;
-                    font-family: "Gochi Hand", cursive;}
-
-                
-.d-complete{ grid-area: 1 / 3 / 2 / 4; }
-           /* From Uiverse.io by mi-series */ 
-.d-complete {
-    border: none;
-    color: rgb(5, 22, 46);
-    transform: rotate(3deg);
-    transform-origin: center;
-    font-family: "Gochi Hand", cursive;
-    text-decoration: none;
-    font-size: 13px;
-    cursor: pointer;
-    padding-bottom: 3px;
-    border-radius: 5px;
-    box-shadow: 0 2px 0 #494a4b;
-    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    background-color: #5cdb95;
-  }
-  
-  .d-complete:active {
-    transform: translateY(5px);
-    padding-bottom: 0px;
-    outline: 0;
-  }
-  .d-complete{ width: 90px;
-    height: 30px;
-    place-content: center;
-    margin-left:85px;
-margin-bottom: 5px;
-  }
-  
-
-.d-del { grid-area: 1 / 4 / 2 / 5; }
-.d-del{ width: 80px;
-    place-content: center;
-    margin-bottom: 20px;
- 
-}
-.d-del{
-    background: #fbca1f;
-    font-family: inherit;
-    padding: 0.6em 1.3em;
-    font-weight: 900;
-    font-size: 14px;
-    border: 3px solid black;
-    border-radius: 0.4em;
-    box-shadow: 0.1em 0.1em;
-    cursor: pointer;
-  }
-  
-  .d-del:hover {
-    transform: translate(-0.05em, -0.05em);
-    box-shadow: 0.15em 0.15em;
-  }
-  
-  .d-del:active {
-    transform: translate(0.05em, 0.05em);
-    box-shadow: 0.05em 0.05em;
-  }
-  
-
-
- 
-     
-
-
-/* css for the bottom section  */
-
-    #socials{ width: 100vw;
-        height: 220px;
-        position: absolute;
-        top: 1050px;
-        background: rgb(18, 0, 20);}
-         
-        #link{ margin-top: 100px;
-        margin-left: 50px;}
-            #link a { color: aliceblue}
-      
-            #icons{ position: absolute;
-                left: 680px;
-                top:40px;
-                width: 60px;
-                height:100px;} 
-                #icons{ 
-                    font-size: 20px;}
-                    #icons i { color: white;
-                        padding-bottom: 10px;
-                        padding-right: 8px;
-                    }
-                    #icons a {width: 100px;
-                        height: 35px;
-                         display: flex;
-                       color: white;
-                       margin-top: 15px;
-                    } 
-           #terms{ position: absolute;
-        left: 950px;
-    top:55px;
-    width:220px;
-    height:125px;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    }
-     #terms p{
-    color: white;
-font-size: 18px;}
